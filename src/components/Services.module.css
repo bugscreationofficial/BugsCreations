@@ -20,7 +20,7 @@
 }
 
 .labelNum {
-  color: var(--neon-green);
+  color: var(--brand-red);
   font-weight: 700;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .greenText {
-  color: var(--neon-green);
+  color: var(--brand-red);
 }
 
 .grid {

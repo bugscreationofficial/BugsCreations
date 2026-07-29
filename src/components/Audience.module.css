@@ -19,7 +19,7 @@
 }
 
 .labelNum {
-  color: var(--neon-green);
+  color: var(--brand-red);
   font-weight: 700;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .cardIcon {
-  color: var(--neon-green);
+  color: var(--brand-red);
   margin-bottom: 24px;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .ctaHighlight {
-  color: var(--neon-green);
+  color: var(--brand-red);
 }
 
 .ctaDesc {
@@ -118,8 +118,8 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--neon-green);
-  color: #000;
+  background: var(--brand-red);
+  color: #fff;
   padding: 18px 40px;
   border-radius: 100px;
   font-size: 16px;
@@ -130,7 +130,7 @@
 }
 
 .ctaButton:hover {
-  box-shadow: 0 0 50px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 50px rgba(226, 26, 34, 0.4);
   transform: scale(1.05);
 }
 
@@ -152,7 +152,7 @@
 .ctaOrb1 {
   width: 350px;
   height: 350px;
-  background: var(--neon-green);
+  background: var(--brand-red);
   top: -30%;
   left: -10%;
   animation: float1 8s ease-in-out infinite;

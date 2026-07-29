@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import BugsCreationLogo from './BugsCreationLogo';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -15,9 +16,9 @@ const Footer = () => {
         <div className={styles.grid}>
           {/* Brand */}
           <div className={styles.brandCol}>
-            <div className={styles.logo}>
-              BUGS<span>CREATION</span>
-            </div>
+            <a href="#" className={styles.logo} aria-label="Bugs Creation Home">
+              <BugsCreationLogo height={48} variant="full" />
+            </a>
             <p className={styles.desc}>
               Building brands with purpose, strategy, and creativity since 2024.
             </p>

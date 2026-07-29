@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import BugsCreationLogo from './BugsCreationLogo';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -23,8 +24,8 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#" className={styles.logo}>
-          BUGS<span>CREATION</span>
+        <a href="#" className={styles.logo} aria-label="Bugs Creation Home">
+          <BugsCreationLogo height={36} variant="compact" />
         </a>
 
         <nav className={styles.desktopNav}>

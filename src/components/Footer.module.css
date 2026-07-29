@@ -17,7 +17,7 @@
 }
 
 .green {
-  color: var(--neon-green);
+  color: var(--brand-red);
 }
 
 .grid {
@@ -29,18 +29,15 @@
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
   margin-bottom: 16px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
-.logo span {
-  color: var(--neon-green);
-  font-weight: 400;
-  margin-left: 4px;
+.logo:hover {
+  opacity: 0.85;
 }
 
 .desc {
@@ -71,9 +68,9 @@
 }
 
 .socials a:hover {
-  background: var(--neon-green);
-  color: #000;
-  border-color: var(--neon-green);
+  background: var(--brand-red);
+  color: #fff;
+  border-color: var(--brand-red);
 }
 
 .linksCol h4, .contactCol h4 {
@@ -98,7 +95,7 @@
 }
 
 .linksCol a:hover {
-  color: var(--neon-green);
+  color: var(--brand-red);
 }
 
 .contactItem {
@@ -112,7 +109,7 @@
 }
 
 .contactItem svg {
-  color: var(--neon-green);
+  color: var(--brand-red);
   flex-shrink: 0;
 }
 

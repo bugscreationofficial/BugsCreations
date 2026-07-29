@@ -10,7 +10,7 @@ const Services = () => {
       title: "Branding & Identity",
       desc: "Logo design, visual identity systems, brand guidelines, and packaging design.",
       tag: "Strategy",
-      color: "var(--neon-green)"
+      color: "var(--brand-red)"
     },
     {
       icon: <Layout size={28} />,
@@ -45,7 +45,7 @@ const Services = () => {
       title: "Content & Copy",
       desc: "Copywriting, email marketing, PR, event branding, and creative consulting.",
       tag: "Content",
-      color: "var(--neon-green)"
+      color: "var(--brand-red)"
     },
   ];
 

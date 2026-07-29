@@ -1,0 +1,133 @@
+.manifestoSection {
+  position: relative;
+  padding: 140px 0;
+  background: var(--bg-primary);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.ambientGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(226, 26, 34, 0.14) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+}
+
+.headerTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.tagDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  box-shadow: 0 0 12px var(--brand-red-glow);
+}
+
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.primaryStatement {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 6vw, 68px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.secondaryHighlight {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5.5vw, 60px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.redGradient {
+  background: linear-gradient(135deg, #ff4d55 0%, #E21A22 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+.bodyDescription {
+  font-family: var(--font-body);
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 850px;
+  margin: 16px 0;
+}
+
+.closingStatement {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.quoteLine {
+  width: 48px;
+  height: 2px;
+  background: var(--brand-red);
+  box-shadow: 0 0 10px var(--brand-red-glow);
+}
+
+.noiseText {
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 3.5vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.strikeText {
+  color: var(--brand-red);
+  font-style: italic;
+  position: relative;
+}
+
+/* Responsive queries */
+@media (max-width: 768px) {
+  .manifestoSection {
+    padding: 80px 0;
+  }
+  .contentWrap {
+    gap: 20px;
+  }
+  .quoteLine {
+    width: 32px;
+  }
+}

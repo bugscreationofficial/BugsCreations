@@ -7,8 +7,10 @@
   --bg-card: #111111;
   --bg-elevated: #1a1a1a;
 
-  /* === NEON ACCENTS === */
-  --neon-green: #00ff88;
+  /* === BRAND ACCENTS === */
+  --brand-red: #E21A22;
+  --brand-red-glow: rgba(226, 26, 34, 0.4);
+  --neon-green: #E21A22; /* Aliased for full red theme consistency */
   --neon-pink: #ff2d6f;
   --neon-blue: #00d4ff;
   --neon-yellow: #ffe14d;
@@ -86,7 +88,7 @@ button {
 
 /* === UTILITY CLASSES === */
 .text-gradient {
-  background: linear-gradient(135deg, var(--neon-green), var(--neon-blue));
+  background: linear-gradient(135deg, #E21A22, #ff4d58);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -107,14 +109,14 @@ button {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--neon-green);
+  background: var(--brand-red);
   border-radius: 3px;
 }
 
 /* Selection */
 ::selection {
-  background: var(--neon-green);
-  color: #000;
+  background: var(--brand-red);
+  color: #fff;
 }
 
 @media (max-width: 768px) {
