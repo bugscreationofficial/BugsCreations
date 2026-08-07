@@ -86,7 +86,7 @@ const Hero = ({ openContactModal }) => {
           transition={{ delay: 1, duration: 0.6 }}
         >
           <div className={styles.stat}>
-            <span className={styles.statNum}>10</span>
+            <span className={styles.statNum}>10+</span>
             <span className={styles.statLabel}>Brands Elevated</span>
           </div>
           <div className={styles.statDivider}></div>
