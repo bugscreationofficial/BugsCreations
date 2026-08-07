@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Rocket, Building2, TrendingUp, ArrowRight } from 'lucide-react';
 import styles from './Audience.module.css';
 
-const Audience = () => {
+const Audience = ({ openContactModal }) => {
   return (
     <section className={styles.audience}>
       <div className={`container`}>
@@ -73,7 +73,7 @@ const Audience = () => {
             <p className={styles.ctaDesc}>
               Let's create powerful brand experiences that inspire trust, spark conversations, and deliver measurable growth.
             </p>
-            <a href="#contact" className={styles.ctaButton}>
+            <a href="#" onClick={(e) => { e.preventDefault(); if (openContactModal) openContactModal(); }} className={styles.ctaButton}>
               <span>Start Your Project</span>
               <ArrowRight size={20} />
             </a>

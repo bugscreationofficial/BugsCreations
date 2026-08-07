@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import BugsCreationLogo from './BugsCreationLogo';
 import styles from './Header.module.css';
 
-const Header = () => {
+const Header = ({ openContactModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -34,7 +34,7 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-          <a href="#contact" className={styles.ctaBtn}>
+          <a href="https://wa.me/919778186821" target="_blank" rel="noopener noreferrer" className={styles.ctaBtn}>
             <span>Let's Talk</span>
             <div className={styles.ctaArrow}>→</div>
           </a>
@@ -69,12 +69,16 @@ const Header = () => {
               </motion.a>
             ))}
             <motion.a
-              href="#contact"
+              href="#"
               className={styles.mobileCta}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileMenuOpen(false);
+                if (openContactModal) openContactModal();
+              }}
             >
               Start a Project →
             </motion.a>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import BugsCreationLogo from './BugsCreationLogo';
 import styles from './Footer.module.css';
 
@@ -23,10 +24,10 @@ const Footer = () => {
               Building brands with purpose, strategy, and creativity since 2024.
             </p>
             <div className={styles.socials}>
-              <a href="#">Fb</a>
-              <a href="#">X</a>
-              <a href="#">Ig</a>
-              <a href="#">In</a>
+              <a href="#" aria-label="Facebook"><FaFacebook size={20} /></a>
+              <a href="#" aria-label="Twitter"><FaTwitter size={20} /></a>
+              <a href="https://www.instagram.com/bugscreationofficial?igsh=OTFkNnp0bTIwZHBr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram size={20} /></a>
+              <a href="#" aria-label="LinkedIn"><FaLinkedin size={20} /></a>
             </div>
           </div>
 
@@ -57,15 +58,15 @@ const Footer = () => {
             <h4>Say Hello</h4>
             <div className={styles.contactItem}>
               <Mail size={16} />
-              <span>hello@bugscreation.com</span>
+              <span>bugscreationoffical.com</span>
             </div>
             <div className={styles.contactItem}>
               <Phone size={16} />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 97781 86821</span>
             </div>
             <div className={styles.contactItem}>
               <MapPin size={16} />
-              <span>Tech City, TX</span>
+              <span>Kozhikode,Kerala,India</span>
             </div>
           </div>
         </div>

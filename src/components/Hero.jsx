@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
 
-const Hero = () => {
+const Hero = ({ openContactModal }) => {
   const blobRef = useRef(null);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          <a href="#contact" className={styles.primaryBtn}>
+          <a href="#" onClick={(e) => { e.preventDefault(); if (openContactModal) openContactModal(); }} className={styles.primaryBtn}>
             Start a Project
             <span className={styles.btnIcon}>↗</span>
           </a>
@@ -86,12 +86,12 @@ const Hero = () => {
           transition={{ delay: 1, duration: 0.6 }}
         >
           <div className={styles.stat}>
-            <span className={styles.statNum}>150+</span>
+            <span className={styles.statNum}>10</span>
             <span className={styles.statLabel}>Brands Elevated</span>
           </div>
           <div className={styles.statDivider}></div>
           <div className={styles.stat}>
-            <span className={styles.statNum}>10+</span>
+            <span className={styles.statNum}>2</span>
             <span className={styles.statLabel}>Years Experience</span>
           </div>
           <div className={styles.statDivider}></div>
