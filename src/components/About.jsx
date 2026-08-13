@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe2, Compass, ShieldCheck } from 'lucide-react';
 import styles from './About.module.css';
 
 const About = () => {
@@ -30,13 +29,8 @@ const About = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className={styles.heading}>
-              We build the kind of branding that <span className={styles.greenText}>competes.</span>
+              Founded as an identity studio. Now operating <span className={styles.greenText}>worldwide.</span> Built on intent, not trend.
             </h2>
-            <div className={styles.taglineBox}>
-              <p className={styles.taglineText}>
-                "Founded as an identity studio. Now operating worldwide. Built on intent, not trend."
-              </p>
-            </div>
           </motion.div>
 
           <motion.div
@@ -52,21 +46,6 @@ const About = () => {
             <p className={styles.desc}>
               Today we work as an extension of ambitious teams around the world — founders, challenger brands, and global marketing departments who want to be recognized <span className={styles.emphText}>instantly</span>, in any market, on any platform.
             </p>
-
-            <div className={styles.featuresList}>
-              <div className={styles.featureItem}>
-                <Globe2 size={18} className={styles.featureIcon} />
-                <span>Operating Worldwide</span>
-              </div>
-              <div className={styles.featureItem}>
-                <Compass size={18} className={styles.featureIcon} />
-                <span>Built on Intent</span>
-              </div>
-              <div className={styles.featureItem}>
-                <ShieldCheck size={18} className={styles.featureIcon} />
-                <span>Identity Studio</span>
-              </div>
-            </div>
           </motion.div>
         </div>
 
