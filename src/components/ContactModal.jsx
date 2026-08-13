@@ -61,16 +61,19 @@ const ContactModal = ({ isOpen, onClose }) => {
           />
           <motion.div
             className={styles.modalContent}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
             initial={{ opacity: 0, y: 50, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.3 }}
           >
-            <button className={styles.closeBtn} onClick={onClose}>
+            <button className={styles.closeBtn} onClick={onClose} aria-label="Close modal">
               <X size={24} />
             </button>
             
-            <h2 className={styles.title}>Start a <span className={styles.highlight}>Project</span></h2>
+            <h2 className={styles.title} id="modal-title">Start a <span className={styles.highlight}>Project</span></h2>
             <p className={styles.subtitle}>Fill in your details below and we'll connect on WhatsApp.</p>
 
             <form onSubmit={handleSubmit} className={styles.form}>

@@ -276,9 +276,8 @@
     font-size: 11px;
   }
 
-  .blob {
-    width: 250px;
-    height: 250px;
+  .blob, .blobBlur {
+    display: none;
   }
 
   .gridLines {
