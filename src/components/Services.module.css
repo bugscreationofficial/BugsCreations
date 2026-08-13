@@ -189,3 +189,46 @@
     font-size: 17px;
   }
 }
+
+/* === TOGGLE BUTTON === */
+.toggleContainer {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  border-radius: 100px;
+  background: var(--bg-card);
+  border: 1px solid rgba(226, 26, 34, 0.3);
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.toggleBtn:hover {
+  background: var(--brand-red);
+  color: #ffffff;
+  border-color: var(--brand-red);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px var(--brand-red-glow);
+}
+
+.toggleBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.toggleBtn:hover svg {
+  transform: scale(1.15);
+}
+
