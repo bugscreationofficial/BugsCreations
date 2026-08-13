@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Globe2, Compass, ShieldCheck } from 'lucide-react';
 import styles from './About.module.css';
 
 const About = () => {
   return (
     <section className={styles.about} id="about">
-      <div className={`container`}>
+      <div className="container">
 
         <div className={styles.topRow}>
           <motion.div
@@ -29,8 +30,13 @@ const About = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className={styles.heading}>
-              Every brand has a story <span className={styles.greenText}>worth telling.</span>
+              We build the kind of branding that <span className={styles.greenText}>competes.</span>
             </h2>
+            <div className={styles.taglineBox}>
+              <p className={styles.taglineText}>
+                "Founded as an identity studio. Now operating worldwide. Built on intent, not trend."
+              </p>
+            </div>
           </motion.div>
 
           <motion.div
@@ -41,11 +47,26 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <p className={styles.desc}>
-              We don't just design logos or create advertisements — we build brands with purpose, strategy, and creativity. From brand discovery and identity design to advertising campaigns that capture attention, we help businesses create meaningful connections.
+              Bugs Creation started with one belief: most branding is decoration — a logo, a palette, a tagline. We build the kind that competes. The kind that turns strangers into customers before a single word is spoken.
             </p>
             <p className={styles.desc}>
-              Every project is driven by research, innovation, and compelling storytelling to ensure your brand is not only seen but <span className={styles.emphText}>remembered.</span>
+              Today we work as an extension of ambitious teams around the world — founders, challenger brands, and global marketing departments who want to be recognized <span className={styles.emphText}>instantly</span>, in any market, on any platform.
             </p>
+
+            <div className={styles.featuresList}>
+              <div className={styles.featureItem}>
+                <Globe2 size={18} className={styles.featureIcon} />
+                <span>Operating Worldwide</span>
+              </div>
+              <div className={styles.featureItem}>
+                <Compass size={18} className={styles.featureIcon} />
+                <span>Built on Intent</span>
+              </div>
+              <div className={styles.featureItem}>
+                <ShieldCheck size={18} className={styles.featureIcon} />
+                <span>Identity Studio</span>
+              </div>
+            </div>
           </motion.div>
         </div>
 
@@ -68,7 +89,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className={styles.cornerLabel}>Since 2024 ↗</div>
+          <div className={styles.cornerLabel}>Worldwide Operations ↗</div>
         </motion.div>
       </div>
     </section>

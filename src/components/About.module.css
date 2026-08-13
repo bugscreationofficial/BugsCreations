@@ -57,6 +57,50 @@
   text-underline-offset: 4px;
 }
 
+.taglineBox {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border-left: 3px solid var(--brand-red);
+  background: var(--bg-card);
+  border-radius: 0 14px 14px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.taglineText {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.featuresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.featureItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.featureIcon {
+  color: var(--brand-red);
+}
+
 /* Abstract Image Block */
 .imageBlock {
   position: relative;
