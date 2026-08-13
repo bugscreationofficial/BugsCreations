@@ -29,7 +29,7 @@ const About = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className={styles.heading}>
-              Founded as an identity studio. Now operating <span className={styles.greenText}>worldwide.</span> Built on intent, not trend.
+              Every brand has a story <span className={styles.greenText}>worth telling.</span>
             </h2>
           </motion.div>
 
@@ -44,7 +44,10 @@ const About = () => {
               Bugs Creation started with one belief: most branding is decoration — a logo, a palette, a tagline. We build the kind that competes. The kind that turns strangers into customers before a single word is spoken.
             </p>
             <p className={styles.desc}>
-              Today we work as an extension of ambitious teams around the world — founders, challenger brands, and global marketing departments who want to be recognized <span className={styles.emphText}>instantly</span>, in any market, on any platform.
+              Providing <span className={styles.emphText}>worldwide services</span>, we work as a global partner for ambitious teams around the world — founders, challenger brands, and global marketing departments who want to be recognized instantly, in any market, on any platform.
+            </p>
+            <p className={styles.desc}>
+              Founded as an identity studio. Now operating worldwide. Built on intent, not trend.
             </p>
           </motion.div>
         </div>
