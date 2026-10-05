@@ -38,7 +38,7 @@ const Hero = ({ openContactModal }) => {
           transition={{ duration: 0.6 }}
         >
           <div className={styles.statusDot}></div>
-          Digital Marketing Agency — Est. 2024
+          Advertising and Branding Agency
         </motion.div>
 
         <motion.h1

@@ -41,7 +41,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <p className={styles.desc}>
-              Bugs Creation is a full-service <span className={styles.emphText}>Digital Marketing & Brand Strategy Agency</span> operating <span className={styles.emphText}>worldwide</span>. We partner with ambitious founders, challenger brands, and global teams to build high-impact identities, performance marketing campaigns, and digital experiences that drive measurable growth in any market.
+              Bugs Creation is a full-service <span className={styles.emphText}>Advertising and Branding Agency</span> operating <span className={styles.emphText}>worldwide</span>. We partner with ambitious founders, challenger brands, and global teams to build high-impact identities, advertising campaigns, and brand experiences that drive measurable growth in any market.
             </p>
           </motion.div>
         </div>
